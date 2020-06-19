@@ -1,0 +1,56 @@
+@import '../colors.less';
+.tasks-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  .tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    // width: 15em;
+    // height: 1.6em;
+
+    li {
+      cursor: pointer;
+      font-size: small;
+      text-align: center;
+      position: relative;
+      background-color: #405061;
+      margin: 0.5em;
+      border-radius: 4px;
+      height: 100%;
+      width: 100%;
+
+      &:hover {
+        background-color: #ddd;
+        left: 0.4em;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 2em;
+        text-align: left;
+        color: white;
+        display: block;
+        padding: 0.4em 2em;
+        width: 100%;
+        height: 100%;
+
+        &:hover {
+          color: @textOnHover;
+        }
+      }
+    }
+  }
+}

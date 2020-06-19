@@ -1,0 +1,16 @@
+<div *ngIf="task" class="task-detail">
+    <h2>{{task.name | uppercase}} Details</h2>
+    <div class="description">
+        <label>Description:
+        </label>
+        <textarea class="description-input" placeholder="description">
+          {{task.description}}
+        </textarea>
+    </div>
+    <div class="weight">
+      <label>Weight:
+      </label>
+      <input class="weight-input" type="number" name="input" [(ngModel)]="task.weight" min="0" required>
+    </div>
+</div>
+<button class="go-back-button" (click)="goBack()">Go back</button>

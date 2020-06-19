@@ -1,0 +1,33 @@
+@import './colors.less';
+h1 {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  color: @title;
+}
+nav {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-around;
+
+  a {
+    font-size: 1.5em;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+
+    &:visited,
+    &:link {
+      color: @textOnLinkNav;
+    }
+    &:hover {
+      color: @textOnHoverNav;
+      background-color: @backgroundOnHoverNav;
+    }
+    .active {
+      color: @textOnActiveNav;
+    }
+  }
+}
